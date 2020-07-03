@@ -29,3 +29,15 @@ let cleaner: IRobot = {
     name: 'cleaner',
     color: 'gray'
 }
+
+// Extending interfaces
+
+interface IRobotCleaner extends IRobot {
+    brush: number
+}
+
+const robotCleaner: IRobotCleaner = {
+    name: 'cleaner',
+    color: 'gray',
+    brush: 2
+}
