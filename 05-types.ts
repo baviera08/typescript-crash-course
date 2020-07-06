@@ -36,15 +36,15 @@ drone.age = 3;
 
 
 // Index types
-
-
-
-// Types vs Interfaces
-
-// Unlike an interface declaration, which always introduces a named object type, a type alias declaration can introduce a name for any kind of type, including primitive, union, and intersection types.
-
-// A class can implement an interface or type alias, both in the same exact way. Note however that a class and interface are considered static blueprints. Therefore, they can not implement / extend a type alias that names a union type.
-
-// Unlike a type alias, an interface can be defined multiple times, and will be treated as a single interface (with members of all declarations being merged).
-
-// https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types
+type IndexType = {
+    messages: {
+        type: string;
+        [index: string]: string;
+    }
+}
+let message: IndexType = {
+    messages: {
+        type: 'test',
+        someKey: 'value'
+    }
+}
