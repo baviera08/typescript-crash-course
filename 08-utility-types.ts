@@ -16,8 +16,8 @@ type TRobot3 = Pick<TRobot, 'name'> & {
     run: () => string;
 }
 
-let robot2: TRobot2;
-let robot3: TRobot3;
+let robot2I: TRobot2;
+let robot3I: TRobot3;
 
 // Intersection between TRobotCleaner and TRobot
 type TRobot4 = Pick<TRobotCleaner, keyof TRobot> & {

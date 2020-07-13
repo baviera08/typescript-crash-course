@@ -42,12 +42,12 @@ enum RobotMovement {
 }
 let right = RobotMovement.right;
 let robotMovement: RobotMovement;
-let stopKey = RobotMovement.stop.valueOf();
+let stopValue = RobotMovement.stop.valueOf();
 
 // Type alias. Using string literal types
 type RobotMovementType = 'right-movement' | 'stop-movement';
 
-let a: RobotMovementType = 'right-movement'
+let a: RobotMovementType = 'right-movement';
 // Example
 // let r:RobotMovementType = '';
 // let i = RobotMovement.
